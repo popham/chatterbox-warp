@@ -1,15 +1,15 @@
-module Chatterbox.Data.Command.Parser.Close
-( Close(..)
+module Chatterbox.Data.Command.Initialize
+( Initialize(..)
 ) where
 
   import Data.Aeson
   import Control.Applicative ((<$>), (<*>))
   import Data.Text (pack)
 
-  data Close = Close
+  data Initialize = Initialize
     { conversation :: Int }
     deriving (Show)
 
   instance FromJSON Initialize where
-    parseJSON (Object json) = Close <$>
+    parseJSON (Object json) = Initialize <$>
       json .: pack "conversationId"

@@ -1,4 +1,4 @@
-module Chatterbox.Data.Command.Parser.Invite
+module Chatterbox.Data.Command.Invite
 ( Invite(..)
 ) where
 

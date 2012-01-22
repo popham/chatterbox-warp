@@ -1,4 +1,4 @@
-module Chatterbox.Data.Command.Parser.Eject
+module Chatterbox.Data.Command.Eject
 ( Eject(..)
 ) where
 

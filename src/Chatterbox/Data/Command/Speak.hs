@@ -1,4 +1,4 @@
-module Chatterbox.Data.Command.Parser.Speak
+module Chatterbox.Data.Command.Speak
 ( Speak(..)
 ) where
 
